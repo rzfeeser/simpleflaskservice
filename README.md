@@ -1,10 +1,22 @@
 # simpleflaskservice
 
-This repo provides a simple Python-Flask Server with several RESTful APIs for learning and testing. I created it to learn about running containers within Pods in Kubernetes, but it has many more applications than "just" testing in clustered environments. Deployed on a virtual machine, or baremetal, it could be a useful tool demonstrating HTTP connectivity.  
+This repo provides a simple Python-Flask Server with several RESTful APIs for learning and testing. I created it to learn about running containers within Pods in Kubernetes, but could be used to test across many orchestrated environments. Deployed on a virtual machine, or baremetal, it could be a useful tool demonstrating HTTP connectivity.  
 
 The current release of this code is also available as a containerized image on https://hub.docker.io/.  
 
-Alternatively, this code can easily be transformed into a docker image following the steps included in this repo.  
+Alternatively, this code can easily be transformed into a docker image following the steps included in this repo. Steps on deploying code found in this repository can be found at the bottom of the README file.
+
+## simpleflaskserver 0.1 API endpoints
+
+## /env [0.1]
+
+## /health [0.1]
+
+## /info [0.1]
+
+## /talkingparrot/[ANYTHING] [0.1]
+Returns a 200 containing the [ANYTHING] string sent to the API endpoint.
+
 
 ## How to transform this code into a Docker Image
 
