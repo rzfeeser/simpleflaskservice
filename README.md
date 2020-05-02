@@ -8,13 +8,13 @@ Alternatively, this code can easily be transformed into a docker image following
 
 ## simpleflaskserver 0.1 API endpoints
 
-## /env [0.1]
+### /env [0.1]
 
-## /health [0.1]
+### /health [0.1]
 
-## /info [0.1]
+### /info [0.1]
 
-## /talkingparrot/[ANYTHING] [0.1]
+### /talkingparrot/[ANYTHING] [0.1]
 Returns a 200 containing the [ANYTHING] string sent to the API endpoint.
 
 
