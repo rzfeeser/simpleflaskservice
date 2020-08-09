@@ -8,54 +8,60 @@ Alternatively, this code can easily be transformed into a docker image following
 
 ## simpleflaskserver 0.1 API endpoints
 
-
 ### /env [0.1]
 
-HTTP/1.1 200 OK
-$HTTP_HEADERZ
- {
-     "env": "$DUMP_OF_ENVIRONMENT_VARS",
-     "version": "$VERSION"
- }
+        HTTP/1.1 200 OK
+        $HTTP_HEADERZ
+         {
+             "env": "$DUMP_OF_ENVIRONMENT_VARS",
+             "version": "$VERSION"
+         }
 
 
 ### /health [0.1]
 
-HTTP/1.1 200 OK
-$HEADER_FIELDS
- {
-     "healthy": true
- }
+        HTTP/1.1 200 OK
+        $HEADER_FIELDS
+         {
+             "healthy": true
+         }
 
 
 ### /info [0.1]
 
-HTTP/1.1 200 OK
-$HTTP_HEADERZ
- {
-     "from": "$REMOTE_IP",
-     "host": ""$HOST:$PORT"",
-     "version": "$VERSION"
- }
+        HTTP/1.1 200 OK
+        $HTTP_HEADERZ
+         {
+             "from": "$REMOTE_IP",
+             "host": ""$HOST:$PORT"",
+             "version": "$VERSION"
+         }
 
 
 ### /alta3 [0.1]
 
-HTTP/1.1 200 OK
-$HTTP_HEADERZ
- {
-     "thanks": "Thank You for training with Alta3 Research!",
-     "alta3":
+        HTTP/1.1 200 OK
+        $HTTP_HEADERZ
          {
-             "homepage": "https://alta3.com",
-             "youtube": "https://www.youtube.com/user/Alta3Research/videos"
-         },
-     "version": "$VERSION"
- }
+             "thanks": "Thank You for training with Alta3 Research!",
+             "alta3":
+                 {
+                     "homepage": "https://alta3.com",
+                     "youtube": "https://www.youtube.com/user/Alta3Research/videos"
+                 },
+             "version": "$VERSION"
+         }
 
 
 ### /talkingparrot/[ANYTHING] [0.1]
 Returns a 200 containing the [ANYTHING] string sent to the API endpoint.
+
+        HTTP/1.1 200 OK
+        $HTTP_HEADERZ
+         {
+             "you said": "Polly want a cracker?",
+             "talking parrot said": "SQUAWKKKK! Polly want a cracker?"
+         }
 
 
 ## How to transform this code into a Docker Image
