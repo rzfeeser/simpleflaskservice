@@ -12,8 +12,12 @@ Alternatively, this code can easily be transformed into a docker image following
 
         HTTP/1.1 200 OK
         $HTTP_HEADERZ
+         "env":
          {
-             "env": "$DUMP_OF_ENVIRONMENT_VARS",
+             "home dir": "$HOME",
+             "user": "$USER",
+             "health delay": "$HEALTH_DELAY",
+             "port": "$PORT",
              "version": "$VERSION"
          }
 
@@ -23,6 +27,8 @@ Alternatively, this code can easily be transformed into a docker image following
         HTTP/1.1 200 OK
         $HEADER_FIELDS
          {
+             "delay in seconds": $HEALTH_DELAY,
+             "version": $VERSION
              "healthy": true
          }
 
@@ -69,8 +75,6 @@ By setting the following environment variables, you can change the runtime behav
 
     - PORT0 - the port simpleservice is serving on
     - VERSION - the value of version returned in the JSON response of the /endpoint0 endpoint
-    - # NO # HEALTH_MIN - min. delay in milisecond that the /health endpoint responds
-    - # NO # HEALTH_MAX - max. delay in milliseconds that the /health endpoint responds
     - HEALTH_DELAY - delay in milliseconds that the /health endpoint responds
 
 ## How to transform this code into a Docker Image
