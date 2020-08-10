@@ -101,3 +101,7 @@ By setting the following environment variables, you can change the runtime behav
 1. Launch on Docker with the following command
 
         docker run -P comingsoon/simpleflaskservice
+
+0. Launch on Docker with the following command
+
+        docker run -d -p 9010:9876 simpleflaskservice
