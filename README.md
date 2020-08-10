@@ -24,7 +24,7 @@ Alternatively, this code can easily be transformed into a docker image following
         $HEADER_FIELDS
          {
              "delay in seconds": $HEALTH_DELAY,
-             "version": $VERSION
+             "version": $VERSION,
              "healthy": true
          }
 
