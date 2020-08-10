@@ -14,11 +14,7 @@ Alternatively, this code can easily be transformed into a docker image following
         $HTTP_HEADERZ
          "env":
          {
-             "home dir": "$HOME",
-             "user": "$USER",
-             "health delay": "$HEALTH_DELAY",
-             "port": "$PORT",
-             "version": "$VERSION"
+             # dump of available environmental variables
          }
 
 
@@ -53,6 +49,7 @@ Alternatively, this code can easily be transformed into a docker image following
              "alta3":
                  {
                      "homepage": "https://alta3.com",
+                     "posters": "https://alta3.com/posters",
                      "youtube": "https://www.youtube.com/user/Alta3Research/videos"
                  },
              "version": "$VERSION"
