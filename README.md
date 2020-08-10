@@ -65,6 +65,13 @@ Returns a 200 containing a "SQUAKK!!" + the [ANYTHING] string sent to the API en
          }
 
 
+By setting the following environment variables, you can change the runtime behaviour of simpleservice:
+
+    - PORT0 - the port simpleservice is serving on
+    - VERSION - the value of version returned in the JSON response of the /endpoint0 endpoint
+    - HEALTH_MIN - min. delay in milisecond that the /health endpoint responds
+    - HEALTH_MAX - max. delay in milliseconds that the /health endpoint responds
+
 ## How to transform this code into a Docker Image
 
 0. Install docker and have it working to the point where you can launch containers. Instructions to do this are outside the scope of this README.md, but refer to https://docker.io for instructions on getting up and running.
