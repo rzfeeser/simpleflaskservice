@@ -76,7 +76,7 @@ By setting the following environment variables, you can change the runtime behav
 
 ## How to Run this Code
 
-0. First, `git clone` the repository to your local machine.
+1. First, `git clone` the repository to your local machine.
 
         git clone https://github.com/rzfeeser/simpleflaskservice
 
@@ -98,5 +98,6 @@ By setting the following environment variables, you can change the runtime behav
 
 ## How to Deploy on Docker
 
-0. Launch on Docker with the following command
+1. Launch on Docker with the following command
 
+        docker run -P comingsoon/simpleflaskservice
