@@ -53,14 +53,15 @@ Alternatively, this code can easily be transformed into a docker image following
          }
 
 
-### /talkingparrot/[ANYTHING] [0.1]
-Returns a 200 containing the [ANYTHING] string sent to the API endpoint.
+### /talkingparrot/?say=[ANYTHING] [0.1]
+Returns a 200 containing a "SQUAKK!!" + the [ANYTHING] string sent to the API endpoint.
 
         HTTP/1.1 200 OK
         $HTTP_HEADERZ
          {
-             "you said": "Polly want a cracker?",
-             "talking parrot said": "SQUAWKKKK! Polly want a cracker?"
+             "you": "Polly want a cracker?",
+             "parrot": "SQUAWK!! Polly want a cracker?",
+             "version": "I am talking parrot version $VERSION"
          }
 
 
