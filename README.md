@@ -74,31 +74,29 @@ By setting the following environment variables, you can change the runtime behav
     - VERSION - the value of version returned in the JSON response of the /endpoint0 endpoint
     - HEALTH_DELAY - delay in milliseconds that the /health endpoint responds
 
-## How to transform this code into a Docker Image
+## How to Run this Code
 
-0. Install docker and have it working to the point where you can launch containers. Instructions to do this are outside the scope of this README.md, but refer to https://docker.io for instructions on getting up and running.
-
-0. git clone the repository to your local machine.
+0. First, `git clone` the repository to your local machine.
 
         git clone https://github.com/rzfeeser/simpleflaskservice
 
-0. Create a file called `Dockerfile` as follows:
+0. Ensure Python 3.6+ has been installed on Debian / Ubuntu Machines
 
-    ```
-    FROM
-    
-    ADD
-    ```
+        sudo apt install python3-pip
 
-0. Create the image.
+0. Ensure Python 3.6+ has been installed, then use `pip` to install Flask.
 
+        python3 -m pip install flask
 
-## Running the Docker Image
+0. Run the code with Python 3.6+
 
-## How to Deploy this Image on Kubernetes
+        python3 simpleflaskservice.py
+        
+0. Set the environmental variable `VERSION` to "24601" and `PORT0` to "8887", then launch the server.
 
-0. Create the following manifest.
+        VERSION=24601 PORT0=8887 python3 simpleflaskservice.py
 
-## Deploying on Bare Metal
+## How to Deploy on Docker
 
-0. Clone the repository to your local machine
+0. Launch on Docker with the following command
+
