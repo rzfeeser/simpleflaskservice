@@ -4,6 +4,7 @@ FROM python:alpine3.7
 
 MAINTAINER Russell Zachary Feeser "RZFeeser@alta3.com"
 
+# copy the file requirements.txt into the image /var/www/requirements.txt
 COPY ./requirements.txt /var/www/requirements.txt
 
 # Use Python package installer to install the Flask library to our image
