@@ -12,9 +12,9 @@ Alternatively, this code can easily be transformed into a docker image following
 
         HTTP/1.1 200 OK
         $HTTP_HEADERZ
-         "env":
          {
-             # dump of available environmental variables
+             "env": # dump of available environmental variables,
+             "version": $VERSION
          }
 
 
