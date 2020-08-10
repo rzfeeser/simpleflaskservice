@@ -69,8 +69,9 @@ By setting the following environment variables, you can change the runtime behav
 
     - PORT0 - the port simpleservice is serving on
     - VERSION - the value of version returned in the JSON response of the /endpoint0 endpoint
-    - HEALTH_MIN - min. delay in milisecond that the /health endpoint responds
-    - HEALTH_MAX - max. delay in milliseconds that the /health endpoint responds
+    - # NO # HEALTH_MIN - min. delay in milisecond that the /health endpoint responds
+    - # NO # HEALTH_MAX - max. delay in milliseconds that the /health endpoint responds
+    - HEALTH_DELAY - delay in milliseconds that the /health endpoint responds
 
 ## How to transform this code into a Docker Image
 
