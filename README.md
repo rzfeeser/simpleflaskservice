@@ -80,6 +80,17 @@ By setting the following environment variables, you can change the runtime behav
 
 0. git clone the repository to your local machine.
 
+        git clone https://github.com/rzfeeser/simpleflaskservice
+
+0. Create a file called `Dockerfile` as follows:
+
+    ```
+    FROM
+    
+    ADD
+    ```
+
+0. Create the image.
 
 
 ## Running the Docker Image
@@ -91,11 +102,3 @@ By setting the following environment variables, you can change the runtime behav
 ## Deploying on Bare Metal
 
 0. Clone the repository to your local machine
-
-0. Create a Dockerfile as follows:
-
-    ```
-    FROM
-    
-    ADD
-    ```
