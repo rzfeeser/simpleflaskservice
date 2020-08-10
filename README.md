@@ -92,4 +92,10 @@ By setting the following environment variables, you can change the runtime behav
 
 0. Clone the repository to your local machine
 
-0. 
+0. Create a Dockerfile as follows:
+
+    ```
+    FROM
+    
+    ADD
+    ```
