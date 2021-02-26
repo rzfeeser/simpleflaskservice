@@ -98,10 +98,14 @@ By setting the following environment variables, you can change the runtime behav
 
 ## How to Deploy on Docker
 
-1. Launch on Docker with the following command
+1. First build an image.
 
-        docker run -P comingsoon/simpleflaskservice
+        sudo docker build -t simpleservice -f Dockerfile .
 
-0. Launch on Docker with the following command
+0. Launch the image in docker with the port `9010` pointing to `9876`, and without hogging up the screen (-d).
 
         docker run -d -p 9010:9876 simpleflaskservice
+
+0. **OR** Launch the image in docker with a random port pointing to the exposed ports.
+
+        docker run -P simpleflaskservice
