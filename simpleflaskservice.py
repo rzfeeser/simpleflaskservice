@@ -5,14 +5,13 @@
 GitHub:
 https://github.com/rzfeeser/simpleflaskservice/README.md
 
-
-
-
-
-
-
-
-
+Endpoints:
+/env
+/health
+/info
+/alta3
+/talkingparrot
+   ?say=Hello%20Parrot (say=string)
 """
 
 import os
