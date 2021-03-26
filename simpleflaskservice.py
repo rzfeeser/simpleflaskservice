@@ -44,7 +44,7 @@ app = Flask(__name__)
 ## Environmental Variables - /env
 @app.route("/env")
 def captain_planet():
-    settings = {}
+    settings = { }
     settings["version"] = VERSION
     settings["env"] = {}
     settings["env"] = dict(os.environ) 
