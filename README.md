@@ -6,7 +6,7 @@ The current release of this code is also available as a containerized image on h
 
 Alternatively, this code can easily be transformed into a docker image following the steps included in this repo. Steps on deploying code found in this repository can be found at the bottom of the README file.
 
-## simpleflaskserver 0.1 API endpoints
+## simpleflaskserver 0.1 API endpoints 
 
 ### /env [0.1]
 
