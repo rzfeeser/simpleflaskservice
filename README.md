@@ -1,4 +1,4 @@
-# simpleflaskservice 
+# simpleflaskservice
 
 This repo provides a simple Python-Flask Server with several RESTful APIs for learning and testing. I created it to learn about running containers within Pods in Kubernetes, but could be used to test across many orchestrated environments. Deployed on a virtual machine, or baremetal, it could be a useful tool demonstrating HTTP connectivity.  
 
