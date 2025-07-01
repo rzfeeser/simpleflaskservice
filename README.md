@@ -118,7 +118,6 @@ By setting the following environment variables, you can change the runtime behav
 
     `docker run -d -p 9010:9876 ghcr.io/rzfeeser/simpleflaskservice:main`
 
-
 ## Tests
 
 You can run the following tests to confirm the server is running:
@@ -130,3 +129,9 @@ curl localhost:9010/alta3
 curl localhost:9010/health
 curl localhost:9010/talkingparrot?say=rzfeeser%20authored%20talking%20parrot
 ```
+
+## Troubleshooting
+
+1. If you're new to Docker, the following command will stop and delete all running containers on your system. This can be especially useful if you are "stuck" trying to get the service to redeploy. Try starting the deployment instructions over after running this command.
+
+    `docker ps -aq | xargs docker stop | xargs docker rm`
