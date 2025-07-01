@@ -8,7 +8,7 @@ on:
     branches: ['main']               # changes to main trigger builds, which may only be written to via pull requests (branch protections)
     paths-ignore:
       - '**/README.md'   # prevent changes to the README.md file from triggering builds
-      - `.github/**`     # prevent changes from files in .github and any subdirectories from triggering builds
+      - '.github/**'     # prevent changes from files in .github and any subdirectories from triggering builds
 
 # Defines two custom environment variables for the workflow. These are used for the Container registry domain, and a name for the Docker image that this workflow builds.
 env:
