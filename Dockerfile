@@ -1,6 +1,6 @@
 # This base image container is avail on hub.docker.com
 # it has python 3.7 avail on Alpine Linux, a minimalist Linux distro
-FROM python:alpine3.7
+FROM docker.io/python:alpine3.7
 
 MAINTAINER Russell Zachary Feeser "RZFeeser@alta3.com"
 
