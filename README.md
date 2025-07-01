@@ -116,4 +116,4 @@ By setting the following environment variables, you can change the runtime behav
 
 1. Launch the image in docker with the port `9010` pointing to `9876`, and without hogging up the screen (`-d`)
 
-    `docker run -d -p 9010:9876 ghcr.io/rzfeeser/simpleflaskservice:sha256-f1ce1835b0d4492a22447ac9243decbf0928605f4a71fb29ad2fd506144261a1`
+    `docker run -d -p 9010:9876 ghcr.io/rzfeeser/simpleflaskservice:sha256-fbf74c42cf8d05906c14239e0f5409e53a8df65c8ff076fe587f8a751e0a1ba7`
