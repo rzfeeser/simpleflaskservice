@@ -35,7 +35,7 @@ if os.getenv("PORT0") is not None:
 # Set the HEALTH_DELAY
 HEALTH_DELAY = 0
 if os.getenv("HEALTH_DELAY") is not None:
-    HEALTH_DELAY = os.getenv("HEALTH_DELAY")
+    HEALTH_DELAY = float(os.getenv("HEALTH_DELAY"))    # ensure the time is convereted into a number sleep() can use
 
 
 app = Flask(__name__)
