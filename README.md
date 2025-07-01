@@ -58,7 +58,7 @@ Alternatively, this code can easily be transformed into a docker image following
          }
 
 
-### /talkingparrot/?say=[ANYTHING] [0.1]
+### /talkingparrot?say=[ANYTHING] [0.1]
 Returns a 200 containing a "SQUAKK!!" + the [ANYTHING] string sent to the API endpoint.
 
         HTTP/1.1 200 OK
@@ -117,3 +117,16 @@ By setting the following environment variables, you can change the runtime behav
 1. Launch the image in docker with the port `9010` pointing to `9876`, and without hogging up the screen (`-d`)
 
     `docker run -d -p 9010:9876 ghcr.io/rzfeeser/simpleflaskservice:main`
+
+
+## Tests
+
+You can run the following tests to confirm the server is running:
+
+```
+curl localhost:9010/env
+curl localhost:9010/info
+curl localhost:9010/alta3
+curl localhost:9010/health
+curl localhost:9010/talkingparrot?say=rzfeeser%20authored%20talking%20parrot
+```
