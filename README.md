@@ -12,6 +12,8 @@ Alternatively, this code can easily be transformed into a docker image following
 
 ### /env [0.1]
 
+        Methods Accepted: GET
+
         HTTP/1.1 200 OK
         $HTTP_HEADERZ
          {
