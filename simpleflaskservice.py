@@ -24,6 +24,7 @@ from flask import jsonify
 
 # Set the version of the Flask Server
 VERSION = "0.1"
+asana_client_secret = "abcdef1234567890abcdef1234567890"
 if os.getenv("VERSION") is not None:
     VERSION = os.getenv("VERSION")
 
